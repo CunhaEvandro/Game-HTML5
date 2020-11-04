@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game HTML5</title>
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    </head>
+    <style>
+        canvas {
+            border:1px solid #d3d3d3;
+            background-color: #f1f1f1;
+        }
+    </style>
+    <body onload="startGame()">
+        <button onmousedown="accelerate(-0.2)"
+        onmouseup="accelerate(0.05)">Acccelerate</button>
+        <p>Use the ACCElerate button to stay in the air</p>
+        <p>How long can you stay alive?</p>
+
+
+        <!--button-->
+
+        <button onmousedown="moveup()" onmouseup="stopMove()" ontouchstart="moveup()">UP</button>
+        <button onmousedown="movedown()" onmouseup="stopMove()" ontouchstart="movedown()">DOWN</button>
+        <button onmousedown="moveleft()" onmouseup="stopMove()" ontouchstart="moveleft()">LEFT</button>
+        <button onmousedown="moveright()" onmouseup="stopMove()" ontouchstart="moveright()">RIGHT</button>
+
+
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/componentGame.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/obstacles.js"></script>
+    <script type="text/javascript" src="js/gravity.js"></script>
+    <script type="text/javascript" src="js/score.js"></script>
+    </body>
+
+</html>
